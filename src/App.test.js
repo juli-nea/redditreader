@@ -23,3 +23,13 @@ test('renders feed component', () => {
 
   expect(getByText(/Feed/)).toBeInTheDocument();
 });
+
+test('renders post component', () => {
+  const { getByText } = render(
+    <Provider store={store}>
+      <App />
+    </Provider>
+  );
+
+  expect(getByText(/Post/)).toBeInTheDocument();
+});
