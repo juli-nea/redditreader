@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import { useSelector, useDispatch } from 'react-redux';
-import { Post } from '../post/Post.js'
+import { Post } from '../posts/Posts.js'
 
 export const Feed = () => {
 
