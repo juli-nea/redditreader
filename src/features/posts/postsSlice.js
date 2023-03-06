@@ -1,9 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { getByTitle } from '@testing-library/react';
 
 const initialState = {
-    hello: 'hello'
-    }
+    1: {
+    id: 1,
+    text: 'Julia'
+    },
+    2: {
+        id: 2,
+        text: 'Peder'
+        }
+}
 
 
 export const postsSlice = createSlice({
