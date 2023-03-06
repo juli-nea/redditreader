@@ -21,5 +21,5 @@ test('renders feed component', () => {
     </Provider>
   );
 
-  expect(getByText(/feed/)).toBeInTheDocument();
+  expect(getByText(/Feed/)).toBeInTheDocument();
 });
