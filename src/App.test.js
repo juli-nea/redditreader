@@ -13,3 +13,13 @@ test('renders learn react link', () => {
 
   expect(getByText(/learn/i)).toBeInTheDocument();
 });
+
+test('renders feed component', () => {
+  const { getByText } = render(
+    <Provider store={store}>
+      <App />
+    </Provider>
+  );
+
+  expect(getByText(/feed/)).toBeInTheDocument();
+});
