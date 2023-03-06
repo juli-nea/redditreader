@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectPosts } from './postsSlice'
 
-export const Post = () => {
+export const Posts = () => {
 
     const posts = useSelector(selectPosts);
 
@@ -10,9 +10,7 @@ export const Post = () => {
         <div>
                 <p>Posts</p>
                 
-                {Object.values(posts).map((post) => (
-                    <p>Hello</p>
-                ))}
+                
 
 
 
