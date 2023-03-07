@@ -23,9 +23,13 @@ export const Posts = () => {
 
             {isLoading || isFetching ? (<p>Loading</p>) : <p>Completed</p>}
 
-            {data && Object.values(data.products).map((theData, i) => (
-            <p key={i}>{theData.title}</p>
+            
+
+            {data && Object.values(data.data.children).map((theData, i) => (
+            <p key={i}>{theData.data.title}</p>
              ))}
+
+            
 
         </div>
     )

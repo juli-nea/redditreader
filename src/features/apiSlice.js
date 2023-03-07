@@ -3,7 +3,7 @@ import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 export const productsApi = createApi({
     reducerPath: 'productsApi',
     baseQuery: fetchBaseQuery({
-      baseUrl: 'https://dummyjson.com/',
+      baseUrl: 'https://www.reddit.com/',
       responseHandler: async (response) => {
         const data = await response.json();
         if (!response.ok) {
@@ -17,10 +17,10 @@ export const productsApi = createApi({
     }),
     endpoints: ({ query }) => ({
       getAllProducts: query({
-        query: () => "products",
+        query: () => "r/popular.json",
       }),
       getProduct: query({
-        query: (product) => `products/search?q=${product}`,
+        query: (product) => `r/popular.json`,
       }),
     }),
   });
