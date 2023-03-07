@@ -9,7 +9,13 @@ export const Posts = () => {
 
     const { data, isLoading, isFetching } = useGetAllProductsQuery();
 
-    console.log(data);
+    if (data) {
+        console.log(data)
+    }
+
+  
+
+   
 
     return (
         <div>
@@ -17,9 +23,10 @@ export const Posts = () => {
 
             {isLoading || isFetching ? (<p>Loading</p>) : <p>Completed</p>}
 
-            {posts && Object.values(posts).map((post) => (
-                <p key={post.id}>Hello this is post number {post.id} and the name is {post.text}</p>
-            ))}
+            {data && Object.values(data.products).map((theData, i) => (
+            <p key={i}>{theData.title}</p>
+             ))}
+
         </div>
     )
 }
