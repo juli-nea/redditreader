@@ -7,13 +7,16 @@ export const Posts = () => {
 
     const posts = useSelector(selectPosts);
 
-    const { data } = useGetAllProductsQuery();
+    const { data, isLoading, isFetching } = useGetAllProductsQuery();
 
-    console.log(data.products[0].title);
+    console.log(data);
 
     return (
         <div>
             <p>Posts</p>
+
+            {isLoading || isFetching ? (<p>Loading</p>) : <p>Completed</p>}
+
             {posts && Object.values(posts).map((post) => (
                 <p key={post.id}>Hello this is post number {post.id} and the name is {post.text}</p>
             ))}
