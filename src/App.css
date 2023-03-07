@@ -3,8 +3,9 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
+  margin-top: 5vmin;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -28,12 +29,12 @@
 
 @keyframes App-logo-float {
   0% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
   50% {
-    transform: translateY(10px);
+    transform: translateX(20px);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
 }

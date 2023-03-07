@@ -17,10 +17,10 @@ export const productsApi = createApi({
     }),
     endpoints: ({ query }) => ({
       getAllProducts: query({
-        query: () => "r/popular.json",
+        query: () => "r/chiari.json",
       }),
       getProduct: query({
-        query: (product) => `r/popular.json`,
+        query: (product) => `r/chiari.json`,
       }),
     }),
   });
