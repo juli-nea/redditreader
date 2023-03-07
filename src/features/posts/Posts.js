@@ -9,7 +9,7 @@ export const Posts = () => {
 
     const { data } = useGetAllProductsQuery();
 
-    console.log(data);
+    console.log(data.products[0].title);
 
     return (
         <div>

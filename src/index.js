@@ -5,8 +5,7 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
-//import {ApiProvider} from '@reduxjs/toolkit/query/react'
-import { productsApi } from './features/apiSlice';
+
 
 const container = document.getElementById('root');
 const root = createRoot(container);
