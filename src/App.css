@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -37,4 +42,26 @@
   100% {
     transform: translateX(0px);
   }
+}
+
+.post-container {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 150px;
+  
+}
+
+ul {
+  list-style: none;
+}
+
+.post-container h2 {
+  font-size: 20px;
+  margin: 0px 0px 10px 0px;
+}
+
+.fetch-status {
+  text-align: center;
+  margin-top: 10px;
 }
